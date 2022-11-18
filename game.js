@@ -76,4 +76,8 @@ function animatePress(currentColor){
       }, 100);
 }
 
-
+function startOver(){
+    level = 0;
+    started = false;
+    gamePattern = [];
+}
