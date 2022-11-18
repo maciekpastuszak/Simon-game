@@ -36,7 +36,12 @@ function checkAnswer(currentLevel){
              }, 1000);
            }
          } else {
-     
+            playSound("wrong.mp3");
+            $("body").addClass("game-over");
+            setTimeout(function () {
+                $("body").removeClass("game-over");
+              }, 200);
+            $("h1").text("Game Over, Press Any Key to Restart");
            console.log("wrong");
          }
     }
